@@ -42,7 +42,7 @@ button:hover{
     transform: scale(1.1);
 }
 #frase{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 #imagem01{
     width: 17%;
@@ -66,7 +66,8 @@ footer a {
 }
 
 
-/* animações */
+
+/* animação da imagem */
 
 [data-anime]{
     opacity: 0;
@@ -80,11 +81,21 @@ footer a {
     transform: translate3d(0, 0, 0);
   }
 
-
+/* animação da frase */
   [data-frase]{
       opacity: 0;
-      transition: 3s;
+      transition: 0.7s ease-in-out;
   }
   [data-frase].animate{
       opacity: 1;
   }
+
+/* animação do button */
+
+    [data-btn]{
+        opacity: 0;
+        transition: 0.2s;
+    }
+    [data-btn].animate{
+        opacity: 1;
+    }

@@ -1,14 +1,21 @@
 const itens = document.querySelectorAll("[data-anime]");
 let frase = document.querySelector("[data-frase]");
+let elementoBtn = document.querySelector("#alterar", "[data-btn]");
+const elementoImg = document.querySelector("#imagem01"); 
+
+//contrle das animações pelo js:
 
 const animeScroll = () => { 
-    const windowTop = window.pageYOffset + window.innerHeight * 0.7;
+    const windowTop = window.pageYOffset + window.innerHeight * 0.65;
     itens.forEach((element) => {
         if(windowTop > element.offsetTop){
             element.classList.add("animate");
             frase.classList.add("animate");
+            elementoBtn.classList.add("animate");
         }else {
             element.classList.remove("animate");
+            frase.classList.remove("animate");
+            elementoBtn.classList.remove("animate");
         }
     })
 }
@@ -18,11 +25,7 @@ window.addEventListener("scroll", () =>{
     animeScroll();
 });
 
-
-let elementoBtn = document.querySelector("#alterar");
-const elementoImg = document.querySelector("#imagem01");
-
-
+//controle das ações:
 
 elementoBtn.addEventListener("click", ()=>{
     if(elementoBtn.value == "primeiro"){
