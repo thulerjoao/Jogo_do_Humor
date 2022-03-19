@@ -33,6 +33,7 @@ button{
     margin-bottom: 3rem;
     border-radius: 1rem;
     padding: .5rem;
+    transition: .3s
 }
 
 button:hover{
@@ -64,9 +65,12 @@ footer a {
     color: #ffff;
 }
 
+
+/* animações */
+
 [data-anime]{
     opacity: 0;
-    transition: 1s;
+    transition: .7s;
   }
   [data-anime="up"]{
     transform: translate3d(0, 100%, 0);
