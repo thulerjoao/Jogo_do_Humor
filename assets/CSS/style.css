@@ -20,7 +20,7 @@ header h1 {
     background: linear-gradient(0.25turn, #030303, #9e0b0b, #505050);
     margin-top: 0;
     border: black 20px ;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     text-align: center;
     text-shadow: 3px 3px  3px  black;
 }
@@ -28,11 +28,11 @@ header h1 {
 button{
     background-color: #9e0b0b;
     color: white;
-    font-size: 2.5em;
-    margin-top: 5em;
-    margin-bottom: 3em;
-    border-radius: 1em;
-    padding: .5em;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    padding: .5rem;
     transition: .3s
 }
 
@@ -42,7 +42,7 @@ button:hover{
     transform: scale(1.1);
 }
 #frase{
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 #imagem01{
     width: 17%;
@@ -54,10 +54,10 @@ button:hover{
 
 footer {
     background-color: rgba(180, 37, 37, 0.938);
-    padding: 4em;
-    margin-top: 0em;
+    padding: 4rem;
+    margin-top: 0rem;
     text-align: center;
-    font-size: 1.3em;       
+    font-size: 1.3rem;       
 }
 
 footer a {
